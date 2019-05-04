@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.synaptics.prometheus.firmware</id>
+  <name>Prometheus Fingerprint Reader</name>
+  <summary>Firmware for the Synaptics Prometheus Fingerprint Reader device</summary>
+  <description>
+    <p>
+      Updating the firmware on your fingerprint reader improves performance and adds
+      new features.
+    </p>
+  </description>
+  <provides>
+    <!-- USB\VID_06CB&PID_00A9 -->
+    <firmware type="flashed">fb218b12-99d6-5917-8936-88d433bf1ecc</firmware>
+  </provides>
+  <requires>
+    <id compare="ge" version="1.2.9">org.freedesktop.fwupd</id>
+  </requires>
+  <url type="homepage">https://www.synaptics.com/products/biometrics</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Proprietary</project_license>
+  <developer_name>Synaptics Inc.</developer_name>
+  <releases>
+    <release urgency="medium" version="10.01.2861149" date="2019-05-04">
+      <checksum filename="prometheus-10.01.2861149_eng.pkg" target="content"/>
+      <description>
+        <p>
+          New features and enhancements:
+        </p>
+        <ul>
+          <li>FIXME</li>
+          <li>FIXME</li>
+          <li>FIXME</li>
+          <li>FIXME</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::UpdateProtocol">com.synaptics.prometheus</value>
+    <value key="LVFS::VersionFormat">triplet</value>
+  </custom>
+</component>
